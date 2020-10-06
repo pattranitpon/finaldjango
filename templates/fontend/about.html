@@ -1,4 +1,4 @@
-{% extends 'fontend/base.html' %} {% block content %} {% block title %} About {% endblock %}
+{% extends 'fontend/base.html' %} {% load static %} {% block title %} {% endblock %} About {% block content %}
 <div class="jumbotron">
     <h1 class="display-3">About Page</h1>
     <p class="lead">Jumbo helper text</p>
@@ -6,6 +6,9 @@
     <p>More info</p>
     <p class="lead">
         <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+    </p>
+    <p>
+        <img style="width: 1200px; height: 500px;" alt="Image description" src="{% static 'images/1.jpg'%}" />
     </p>
 </div>
 {% endblock %}

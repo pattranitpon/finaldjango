@@ -1,11 +1,45 @@
-{% extends 'fontend/base.html' %} {% block content %} {% block title %} Home {% endblock %}
+{% extends 'fontend/base.html' %} {% load static %}{% block content %} {% block title %} Home {% endblock %}
 <div class="jumbotron">
     <h1 class="display-3">My Home Page</h1>
     <p class="lead">Jumbo helper text</p>
     <hr class="my-2">
-    <p>More info</p>
+    <p>Luckly Color</p>
+    <table class="table">
+        <caption>Color by Day</caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Luck</th>
+                <th>Love</th>
+                <th>Study</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Blue Ocean</td>
+                <td>Pink</td>
+                <td>Blue</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Purple</td>
+                <td>Red</td>
+                <td>Light Blue</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Pastel Pink</td>
+                <td>Yellow</td>
+                <td>Orange</td>
+            </tr>
+        </tbody>
+    </table>
     <p class="lead">
         <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+    </p>
+    <p>
+        <img style="width: 1200px; height: 500px;" alt="Image description" src="{% static 'images/25.jpg'%}" />
     </p>
 </div>
 {% endblock %}
